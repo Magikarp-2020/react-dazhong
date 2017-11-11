@@ -9,8 +9,16 @@ class App extends Component {
         return (
             <div className="App">
                 list ~~~
+                <p>to detail</p>
+                <p>to detail 1</p>
+                <p onClick={this.handlerClick.bind(this, 2)}>to detail 2</p>
             </div>
         );
+    }
+
+    handlerClick(value) {
+        console.log(value, this);
+        this.props.history.push('/detail/' + value);
     }
 }
 

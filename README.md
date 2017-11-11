@@ -35,7 +35,6 @@ class BaseRouter extends Component {
 }
 
 export default BaseRouter;
-
 ```
 
 ### 嵌套路由
@@ -68,10 +67,41 @@ class App extends Component {
 }
 
 export default App;
-
 ```
 
+### 编程式导航
 
+> src/containers/List/index.js
+
+```jsx
+/**
+ * Created by lichao on 2017/10/21.
+ */
+import React, {Component} from 'react';
+import '_assets/styles/index.css';
+
+class App extends Component {
+    render() {
+        return (
+            <div className="App">
+                list ~~~
+                <p>to detail</p>
+                <p>to detail 1</p>
+            	{/* 绑定事件 */}
+                <p onClick={this.handlerClick.bind(this, 2)}>to detail 2</p>
+            </div>
+        );
+    }
+
+    handlerClick(value) {
+      	{/* 路由跳转 */}
+        this.props.history.push('/detail/' + value);
+    }
+}
+
+export default App;
+
+```
 
 
 

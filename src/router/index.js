@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {HashRouter, Route, Switch} from 'react-router-dom';
 import Home from '_containers/Home/index';
 import Detail from '_containers/Detail/index';
+import List from '_containers/List/index';
 
 class BaseRouter extends Component {
     render() {
@@ -11,6 +12,7 @@ class BaseRouter extends Component {
                 <Switch id="router-wrap">
                     <Route exact path="/" component={Home}/>
                     <Route path="/detail" component={Detail}/>
+                    <Route path="/list" component={List}/>
                 </Switch>
             </HashRouter>
         )
