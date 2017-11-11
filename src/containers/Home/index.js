@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 class App extends Component {
     render() {
         return (
-            <div className="App">
+            <div>
                 <p><Link to="/detail">detail</Link></p>
                 <p><Link to="/detail/2">detail -- 2</Link></p>
 

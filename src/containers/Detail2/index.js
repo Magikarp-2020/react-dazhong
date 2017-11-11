@@ -6,9 +6,10 @@ import '_assets/styles/index.css';
 
 class App extends Component {
     render() {
+        console.log(this.props);
         return (
-            <div className="App">
-                this is detail ~!!!121231212
+            <div>
+                this is detail -> {this.props.match.params.number}
             </div>
         );
     }

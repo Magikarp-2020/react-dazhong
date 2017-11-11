@@ -9,12 +9,12 @@ class App extends Component {
     render() {
         console.log(this.props);
         return (
-            <div className="App">
+            <div>
                 <p>this is detail ~!!!</p>
                 <div>
                     {this.props.children}
                 </div>
-                <Route path="/:number" component={Detail2}/>
+                <Route path="/detail/:number" component={Detail2}/>
                 <p>footer...</p>
             </div>
         );

@@ -7,7 +7,7 @@ import '_assets/styles/index.css';
 class App extends Component {
     render() {
         return (
-            <div className="App">
+            <div>
                 list ~~~
                 <p>to detail</p>
                 <p>to detail 1</p>
