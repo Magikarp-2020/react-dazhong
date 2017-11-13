@@ -1,13 +1,16 @@
+/**
+ * Created by lichao on 2017/10/21.
+ */
 import React, {Component} from 'react';
 
-class User extends Component {
+class City extends Component {
     render() {
         return (
             <div>
-                404
+                City
             </div>
         );
     }
 }
 
-export default User;
+export default City;

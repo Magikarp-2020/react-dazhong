@@ -4,7 +4,7 @@ class User extends Component {
     render() {
         return (
             <div>
-                404
+                User
             </div>
         );
     }
