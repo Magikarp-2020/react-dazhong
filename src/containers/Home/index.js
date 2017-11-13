@@ -5,10 +5,10 @@ class App extends Component {
     render() {
         return (
             <div>
-                <p><Link to="/detail">detail</Link></p>
-                <p><Link to="/detail/2">detail -- 2</Link></p>
+                <p><Link to="/detail/2">detail</Link></p>
+                <p><Link to="/city">city</Link></p>
+                <p><Link to="/user">user</Link></p>
 
-                <p><Link to="/list">List</Link></p>
             </div>
         );
     }
