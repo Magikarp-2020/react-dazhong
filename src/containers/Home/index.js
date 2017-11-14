@@ -1,17 +1,29 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import HomeHeader from '_components/HomeHeader/index';
+import {connect} from 'react-redux';
 
-class App extends Component {
+class Home extends Component {
     render() {
         return (
             <div>
-                <p><Link to="/detail/2">detail</Link></p>
-                <p><Link to="/city">city</Link></p>
-                <p><Link to="/user">user</Link></p>
-
+                <HomeHeader cityName={this.props.userinfo.cityName}/>
             </div>
         );
     }
 }
 
-export default App;
+const mapStateToProps = (state) => {
+    return {
+        userinfo: state.userinfo
+    }
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {}
+};
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Home);
+

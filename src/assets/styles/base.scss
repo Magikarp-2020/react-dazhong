@@ -1,0 +1,23 @@
+body {
+  background: #f2f2f2;
+}
+
+body, div, p, span {
+  padding: 0;
+  margin: 0;
+}
+
+.clearfix {
+  &:after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+}
+
+.fll {
+  float: left !important;
+}
+.flr {
+  float: right !important;
+}

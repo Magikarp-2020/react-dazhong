@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import App from '_containers/App/index';
 import registerServiceWorker from './registerServiceWorker';
-
 import configureStore from '_store/configureStore';
+
+import '_assets/styles/base.scss';
+import '_assets/font/font.css';
 
 const store = configureStore();
 
