@@ -13,3 +13,10 @@ export const updateCityName = (data) => {
         data
     }
 };
+
+export const update = (data) => {
+    return {
+        type: actionTypes.USERINFO_UPDATE,
+        data
+    }
+}

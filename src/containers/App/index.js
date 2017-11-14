@@ -21,7 +21,6 @@ class App extends Component {
         if (cityName === undefined || cityName === null) {
             cityName = '北京'
         }
-        console.log(this.props);
         this.props.userInfoActions.update({
             cityName
         });

@@ -9,6 +9,8 @@ export default (state = initialState, action) => {
             return action.data;
         case actionTypes.UPDATE_CITYNAME:
             return action.data;
+        case actionTypes.USERINFO_UPDATE:
+            return action.data;
         default:
             return state;
     }
