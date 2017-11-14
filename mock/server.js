@@ -5,19 +5,16 @@ const Router = require('koa-router');
 const app = new Koa();
 const router = new Router();
 
+const homeAdData = require('./home/ad.js');
 
-router.get('/', function (next) {
-    this.body = '123123'
+router.get('/', function (ctx, next) {
+    // ctx.router available
+    ctx.body = '11111';
 });
-
-router.get('/api', function (next) {
-    this.body = 'api...'
+router.get('/api/home/ad', function (ctx, next) {
+    // ctx.router available
+    ctx.body = homeAdData;
 });
-
-router.post('/api/post', koaBody, function () {
-    this.body = JSON.stringify(this.request.body);
-});
-
 
 app
     .use(router.routes())
