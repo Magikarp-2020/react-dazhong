@@ -1,0 +1,135 @@
+#home-category {
+  background-color: #fff;
+  padding: 10px;
+
+  .carousel-item {
+    ul {
+      width: 100%;
+      height: auto;
+    }
+    li {
+      display: block;
+      list-style: none;
+      width: 20%;
+      background-repeat: no-repeat;
+      background-size: 50px auto;
+      background-position: top center;
+      text-align: center;
+      padding-top: 50px;
+      color: #666;
+      font-size: 14px;
+    }
+    li.jingdian {
+      background-image: url(~_assets/images/swipe-icon/22.png);
+    }
+    li.ktv {
+      background-image: url(~_assets/images/swipe-icon/20.png);
+    }
+    li.gouwu {
+      background-image: url(~_assets/images/swipe-icon/21.png);
+    }
+    li.shenghuofuwu {
+      background-image: url(~_assets/images/swipe-icon/26.png);
+    }
+    li.jianshenyundong {
+      background-image: url(~_assets/images/swipe-icon/28.png);
+    }
+    li.meifa {
+      background-image: url(~_assets/images/swipe-icon/24.png);
+    }
+    li.qinzi {
+      background-image: url(~_assets/images/swipe-icon/25.png);
+    }
+    li.xiaochikuaican {
+      background-image: url(~_assets/images/swipe-icon/27.png);
+    }
+    li.zizhucan {
+      background-image: url(~_assets/images/swipe-icon/29.png);
+    }
+    li.jiuba {
+      background-image: url(~_assets/images/swipe-icon/23.png);
+    }
+    li.meishi {
+      background-image: url(~_assets/images/swipe-icon/15.png);
+    }
+    li.dianying {
+      background-image: url(~_assets/images/swipe-icon/1.png);
+    }
+    li.jiudian {
+      background-image: url(~_assets/images/swipe-icon/13.png);
+    }
+    li.xuixianyule {
+      background-image: url(~_assets/images/swipe-icon/17.png);
+    }
+    li.waimai {
+      background-image: url(~_assets/images/swipe-icon/16.png);
+    }
+    li.huoguo {
+      background-image: url(~_assets/images/swipe-icon/12.png);
+    }
+    li.liren {
+      background-image: url(~_assets/images/swipe-icon/14.png);
+    }
+    li.dujiachuxing {
+      background-image: url(~_assets/images/swipe-icon/11.png);
+    }
+    li.zuliaoanmo {
+      background-image: url(~_assets/images/swipe-icon/19.png);
+    }
+    li.zhoubianyou {
+      background-image: url(~_assets/images/swipe-icon/18.png);
+    }
+    li.ribencai {
+      background-image: url(~_assets/images/swipe-icon/7.png);
+    }
+    li.SPA {
+      background-image: url(~_assets/images/swipe-icon/30.png);
+    }
+    li.jiehun {
+      background-image: url(~_assets/images/swipe-icon/5.png);
+    }
+    li.xuexipeixun {
+      background-image: url(~_assets/images/swipe-icon/10.png);
+    }
+    li.xican {
+      background-image: url(~_assets/images/swipe-icon/9.png);
+    }
+    li.huochejipiao {
+      background-image: url(~_assets/images/swipe-icon/3.png);
+    }
+    li.shaokao {
+      background-image: url(~_assets/images/swipe-icon/8.png);
+    }
+    li.jiazhuang {
+      background-image: url(~_assets/images/swipe-icon/4.png);
+    }
+    li.chongwu {
+      background-image: url(~_assets/images/swipe-icon/2.png);
+    }
+    li.quanbufenlei {
+      background-image: url(~_assets/images/swipe-icon/6.png);
+    }
+  }
+
+  .index-container {
+    margin-top: 10px;
+
+    ul {
+      width: 100%;
+      height: auto;
+      text-align: center;
+    }
+    li {
+      list-style: none;
+      display: inline-block;
+      height: 8px;
+      width: 8px;
+      border-radius: 4px;
+      background-color: #ccc;
+      margin: 0 3px;
+    }
+    li.selected {
+      background-color: rgb(233, 32, 61);
+    }
+  }
+}
