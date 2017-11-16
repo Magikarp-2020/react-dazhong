@@ -27,7 +27,6 @@ class Ad extends Component {
 
     componentDidMount() {
         HomeRequest.getAdList().then((resp = []) => {
-            console.log(resp);
             this.setState({
                 data: resp
             })

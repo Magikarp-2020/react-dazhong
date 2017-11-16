@@ -9,9 +9,9 @@ export default new class {
         });
     }
 
-    getListData(data) {
+    getListData({city = '', page}) {
         return xhr({
-            url: getHomeList + '/' + encodeURIComponent(data.city.toString()) + '/' + encodeURIComponent(data.page.toString()),
+            url: getHomeList + '/' + encodeURIComponent(city.toString()) + '/' + encodeURIComponent(page.toString()),
             type: 'get'
         })
     }

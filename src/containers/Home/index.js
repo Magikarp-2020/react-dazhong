@@ -15,11 +15,10 @@ class Home extends Component {
                 <Category/>
                 <div style={{height: '15px'}}/>
                 <Ad/>
-                <List/>
+                {this.props.userinfo.cityName ? <List cityName={this.props.userinfo.cityName}/> : ''}
             </div>
         );
     }
-
 }
 
 const mapStateToProps = (state) => {
