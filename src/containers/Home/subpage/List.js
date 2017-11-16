@@ -24,7 +24,7 @@ class List extends Component {
                 {
                     this.state.hasMore ?
                         <LoadMore isLoadingMore={this.state.isLoadingMore} loadMoreFn={this.loadMoreData.bind(this)}/> :
-                        <div>no more</div>
+                        ''
                 }
             </div>
         );
