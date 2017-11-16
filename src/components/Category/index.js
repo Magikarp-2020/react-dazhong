@@ -14,7 +14,7 @@ class Category extends Component {
 
     render() {
         let opt = {
-            auto: 2500,
+            auto: 10000,
             callback: (index) => {
                 this.setState({
                     index: index
