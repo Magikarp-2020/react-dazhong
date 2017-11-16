@@ -22,10 +22,12 @@ router.get('/api/home/list/:city/:page', koaBody, function (ctx, next) {
     // 参数
     const params = ctx.params;
     const paramsCity = params.city;
-    const paramsPage = params.page;
+    const paramsPage = parseInt(params.page, 10);
 
     console.log('当前城市：' + paramsCity);
     console.log('当前页数：' + paramsPage);
+
+    homeListData.page = paramsPage;
 
     ctx.body = homeListData
 });

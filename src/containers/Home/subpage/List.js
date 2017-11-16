@@ -35,7 +35,7 @@ class List extends Component {
     }
 
     loadFirstPageData() {
-        this.fetchData(this.props.cityName, 0);
+        this.fetchData(this.props.cityName);
     }
 
     loadMoreData() {
@@ -45,7 +45,7 @@ class List extends Component {
         this.fetchData(this.props.cityName, this.state.page + 1);
     }
 
-    fetchData(cityName, page) {
+    fetchData(cityName, page = 0) {
         HomeRequest.getListData({
             city: cityName,
             page
@@ -53,7 +53,8 @@ class List extends Component {
             this.setState({
                 hasMore: res.hasMore,
                 data: this.state.data.concat(res.data),
-                isLoadingMore: false
+                isLoadingMore: false,
+                page: res.page
             });
         })
     }
