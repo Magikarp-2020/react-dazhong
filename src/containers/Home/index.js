@@ -11,13 +11,21 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <HomeHeader cityName={this.props.userinfo.cityName}/>
+                <HomeHeader cityName={this.props.userinfo.cityName} onCityClick={this.toCity}/>
                 <Category/>
                 <div style={{height: '15px'}}/>
                 <Ad/>
                 {this.props.userinfo.cityName ? <List cityName={this.props.userinfo.cityName}/> : ''}
             </div>
         );
+    }
+
+    componentDidMount() {
+        console.log(this.props.history);
+    }
+
+    toCity = () => {
+        this.props.history.push('/city')
     }
 }
 

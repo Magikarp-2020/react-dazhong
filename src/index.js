@@ -6,7 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 import configureStore from '_store/configureStore';
 
 import '_assets/styles/base.scss';
-import '_assets/font/font.css';
+import '_assets/font/font.scss';
 
 const store = configureStore();
 
