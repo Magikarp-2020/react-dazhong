@@ -21,7 +21,6 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props.history);
     }
 
     toCity = () => {

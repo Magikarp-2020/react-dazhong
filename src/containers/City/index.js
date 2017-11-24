@@ -6,10 +6,13 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as userInfoActionsFromOtherFile from '_actions/userinfo'
 
+import Header from '_components/Header/index';
+
 class City extends Component {
     render() {
         return (
             <div>
+                <Header history={this.props.history}/>
                 City
             </div>
         );
