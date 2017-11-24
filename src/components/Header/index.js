@@ -21,7 +21,11 @@ class Header extends Component {
     }
 
     handleBackClick() {
-        this.props.history.goBack();
+        if (this.props.history) {
+            this.props.history.goBack();
+        } else {
+            window.history.back();
+        }
     }
 }
 
