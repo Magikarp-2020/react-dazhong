@@ -4,10 +4,15 @@ import Icon from '_components/Icon';
 import './style.scss';
 
 class HomeHeader extends Component {
+    static defaultProps = {
+        onCityClick: function () {
+        }
+    };
+
     render() {
         return (
             <div id="home-header" className="clearfix">
-                <div className="home-header-left fll">
+                <div onClick={this.handleCityClick.bind(this)} className="home-header-left fll">
                     <span>{this.props.cityName}</span>
                     &nbsp;
                     <Icon iconType="angle-down"/>
@@ -23,6 +28,10 @@ class HomeHeader extends Component {
                 </div>
             </div>
         );
+    }
+
+    handleCityClick(e) {
+        this.props.onCityClick(e);
     }
 }
 
